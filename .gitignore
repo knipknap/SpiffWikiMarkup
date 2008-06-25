@@ -1,0 +1,6 @@
+*.py[co]
+*.png
+*.egg-info
+build
+dist
+handbook

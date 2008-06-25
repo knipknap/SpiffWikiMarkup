@@ -1,0 +1,36 @@
+Changes since 0.3
+
+  * Html2Wiki: Support for XHTML span attributes with class "bold", "italic",
+  and "underline" was added.
+
+  * Wiki2Html: Underline using XHTML strict compliant <span class="underline">
+  instead of <u> tags.
+
+Changes since 0.2
+
+  * Html2Wiki.py: A broken unit test caused many bugs to remain undiscovered.
+  The test was fixed, the linebreak-handling of the class was reworked and some
+  other bugs were also fixed. You should particulary notice a much higher
+  reliability when converting between wiki markup and HTML multiple times.
+  Prepending a "!" before a WikiWord now prevents it from being linked.
+  URL captions now allow more characters.
+  Links are now made by enclosing them in square brackets (no longer curly
+  brackets).
+  Support for preformatted text with the #Text/#End tag was added.
+  Improved recognition of external URLs.
+
+Changes since 0.1
+
+  * Wiki2Html.py: Now also works with windows line breaks. Line break handling
+  has also bee improved in other cases. The _underline_ tag now underlines, it
+  no longer strikes through the text.
+  The #Table tag has been removed, tables work now only by using the #Heading
+  and #Row tags.
+  Headings now support additional characters, like punctuation, slashes,
+  dashes, etc.
+  (set_wiki_word_handler): New method, provides a hook into the new WikiWord
+  parser.
+  (set_url_handler): New method, provides a hook into the new URL parser.
+
+  * Html2Wiki.py: Added support for hyperlinks. Changed to reflect the changes
+  in Wiki2Html.py.
