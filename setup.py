@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
-setup(name             = 'Spiff WikiMarkup',
-      version          = '0.3',
+setup(name             = 'SpiffWikiMarkup',
+      version          = '0.4.0',
       description      = 'A library for converting between HTML and Wiki text',
       long_description = \
 """
@@ -14,7 +14,7 @@ Wiki markup language.
       packages         = [p for p in find_packages('src')],
       install_requires = [],
       keywords         = 'spiff wikimarkup wiki markup html convert bidirectional',
-      url              = 'http://code.google.com/p/spiff/',
+      url              = 'http://code.google.com/p/spiff-wikimarkup/',
       classifiers      = [
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
