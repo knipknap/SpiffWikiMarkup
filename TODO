@@ -1,0 +1,3 @@
+* Improve API documentation, mark methods that are supposed to be private.
+* Make API between both parsers more consistent.
+* Improve the handbook.
