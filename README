@@ -1,21 +1,21 @@
-Spiff WikiMarkup
------------------
+= Spiff WikiMarkup =
+
 This library is part of the Spiff platform.
 
-Spiff WikiMarkup is a library for (bidirectionally) converting between Wiki
+Spiff WikiMarkup is a library for (bidirectionally) converting between Wiki 
 markup language and HTML.
 
 
-Contact
---------
-Mailing List: http://groups.google.com/group/spiff-devel/
+= Contact =
+
+Mailing List: [http://groups.google.com/group/spiff-devel/]
 
 
-Dependencies
--------------
+= Dependencies =
+
 None
 
 
-Usage
-------
+= Usage =
+
 FIXME (email the author if you need docs, that will make him write it)
