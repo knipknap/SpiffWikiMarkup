@@ -21,6 +21,7 @@ digit       = Range('09')
 spaces      = Any(" \t\r\n")
 nl          = Str("\n") | Eof
 not_nl      = AnyBut("\r\n")
+escaped     = Str('\\') + AnyChar
 dash        = Str('-')
 colon       = Str(':')
 hash        = Str('#')
@@ -326,6 +327,10 @@ class WikiParser(Scanner):
         #print "Char: '%s'" % text
         self.my_buffer += text
 
+    def _escaped_text(self, text):
+        #print "Escaped: '%s'" % text
+        self.my_buffer += text[1]
+
     def eof(self):
         #print "EOF"
         self._blank_line('')
@@ -346,6 +351,7 @@ class WikiParser(Scanner):
         ]),
 
         # Brackets.
+        (escaped,   _escaped_text),
         (o_bracket, _open_bracket_action),
         (c_bracket, _close_bracket_action),
 
